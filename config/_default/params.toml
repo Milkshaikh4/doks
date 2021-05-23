@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "MQU Climbing Society"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "The climbing society to rival any and all"
+description = "Join now for the climb, social and merch. Meet new people in an interesting environment inclusive to all"
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
@@ -53,6 +53,6 @@ editPage = false
   flexSearch = true
   darkMode = true
   bootStrapJs = false
-  breadCrumb = false
+  breadCrumb = true
   highLight = true
   kaTex = false

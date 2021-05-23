@@ -1,4 +1,4 @@
-name = "Doks"
+name = "mq climbing society"
 license = "MIT"
 licenselink = "https://github.com/h-enk/doks/blob/master/LICENSE"
 description = "Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
@@ -8,5 +8,4 @@ features = ["security aware", "fast by default", "seo-ready", "development tools
 min_version = "0.75.0"
 
 [author]
-  name = "Henk Verlinde"
-  homepage = "https://henkverlinde.com/"
+  name = "Nabil Shaikh"
