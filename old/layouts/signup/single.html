@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="page">
+  <div class="form-container">
+    <h1>MQU ClimbSoc Member Form</h1>
+    <p>Hello! Please fill out the following form to join MQU ClimbSoc. The information collected will be forwarded to
+      the University for admin purposes regarding the establishment of MQU ClimbSoc as an affiliated society in the near
+      future. Looking forward to meeting and climbing with all of you!</p>
+    <form id="signupForm" name="signupForm">
+      <div class="mb-5 col-md-10">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" id="nameInput" value="John Smith" placeholder="John Smith" required>
+      </div>
+      <div class="mb-5 col-md-10">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" value="name@example.com" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-5">
+        <label class="form-label">Are you a Macquarie student</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="isMQStudent" id="isMQStudent1" checked>
+          <label class="form-check-label" for="isMQStudent1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="isMQStudent" id="isMQStudent2">
+          <label class="form-check-label" for="isMQStudent2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="mb-5 col-md-10" id="studentID">
+        <label for="studentId" class="form-label">Student ID</label>
+        <input type="text" class="form-control" id="studentId" value="z51637932">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+{{ end }}
