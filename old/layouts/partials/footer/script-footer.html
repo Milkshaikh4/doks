@@ -51,6 +51,9 @@
 
 {{ $js := $slice | resources.Concat "main.js" -}}
 
+{{ $form := resources.Get "js/formSubmit.js" -}}
+{{ $form := $form | js.Build -}}
+
 {{ if eq (hugo.Environment) "development" -}}
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" defer></script>
@@ -63,6 +66,7 @@
     <script src="{{ $katexAutoRender.RelPermalink }}" onload="renderMathInElement(document.body);" defer></script>
   {{ end -}}
   <script src="{{ $js.RelPermalink }}" defer></script>
+  <script src="{{ $form.RelPermalink }}" defer></script>
   {{ if .Site.Params.options.flexSearch -}}
     <script src="{{ $index.RelPermalink }}" defer></script>
   {{ end -}}
@@ -73,6 +77,8 @@
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
   {{ $katex := $katex | minify | fingerprint "sha512" -}}
   {{ $katexAutoRender := $katexAutoRender | minify | fingerprint "sha512" -}}
+  {{ $form := $form | minify | fingerprint "sha512" }}
+  <script src="{{ $form.RelPermalink }}" integrity="{{ $form.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" integrity="{{ $bs.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}

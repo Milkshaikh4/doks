@@ -975,7 +975,6 @@ transition: all 0.3s ease-in;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding-bottom: 50px;
-    
      min-height: 980px;
 }
  .header {
@@ -1128,21 +1127,20 @@ transition: ease all 0.5s;
 
 /** about section **/
  .about {
-     background:url(../images/about_bg.jpg);
+    background: url(../images/about_bg.jpg);
     background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-padding: 110px 0;
-margin-top: 90px;
-     
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0;
+    margin-top: 90px;
 }
 
 .display_boxflex {
-
      display: flex;
      align-items: center;
      flex-wrap: wrap;
 }
+
  .about .about-box {
     text-align: left;
     
