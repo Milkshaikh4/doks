@@ -30,7 +30,7 @@
   pre = '<img src="https://img.icons8.com/dusk/64/000000/instagram-new.png" style="height: 32px; object-fit: contain"/>'
   url = "https://www.instagram.com/mquclimbsoc/"
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[footer]]
+  name = "Privacy"
+  url = "/privacy-policy/"
+  weight = 10

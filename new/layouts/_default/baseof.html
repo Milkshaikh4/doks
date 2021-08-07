@@ -19,11 +19,6 @@
     {{ else -}}
       {{ block "main" . }}{{ end }}
     {{ end -}}
-    <!-- {{ block "about" . }}{{ end }}
-    {{ block "upcoming" . }}{{ end }}
-    {{ block "contact-us" . }}{{ end }} -->
-    <!-- {{ block "sidebar-prefooter" . }}{{ end }} -->
-    <!-- {{ block "sidebar-footer" . }}{{ end }} -->
     {{ partial "footer/footer.html" . }}
     {{ if and .IsHome .Site.Params.alert }}
       {{ partial "footer/alert.html" . }}
